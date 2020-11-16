@@ -5,7 +5,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 const Header = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  // const [{ basket }, dispatch] = useStateValue();
   return (
     <div className="header">
       {/* Amazon logo */}
@@ -38,8 +38,8 @@ const Header = () => {
         <Link to="/checkout">
           <div className="header_basket">
             <ShoppingBasketIcon />
-            <span className="header_option_second header_basketCount">
-              {basket?.length}
+            <span className="header_option_second header_basketCount">0
+              {/* {basket?.length} */}
             </span>
           </div>
         </Link>
